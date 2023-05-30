@@ -1,0 +1,22 @@
+{
+  "name": "electron.min.ts",
+  "version": "1.0.0",
+  "main": "dist-electron/electron.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && electron-builder"
+  },
+  "build": {
+    "directories": {
+      "output": "release"
+    }
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^23.6.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.9",
+    "vite-plugin-electron": "^0.11.2"
+  }
+}
